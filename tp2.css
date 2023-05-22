@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+header{
+    background-color: rgb(161, 38, 38);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.p-1{
+    font-size: 1.3rem;
+    margin-left: 5%;
+    color: white;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    margin-right: 30vh;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li a{
+    padding: 8px;
+    color: white;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: black;
+}
+.drown{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: rgba(5, 2, 2, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.drown.open{
+    height: 150px;
+}
+.drown li{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p-2{
+    font-size: 1.9rem;
+    color: white;
+    margin-right: 10%;
+    cursor: pointer;
+    display: none;
+}
+
+
+.part-2{
+    margin-top: 10vh;
+}
+.part-2 button{
+    height: 5vh;
+    width: 25vh;
+    margin-left: 3%;
+}
+
+
+form{
+    margin-top: 20vh;
+    margin-left: 55vh;
+    height: 60vh;
+    width: 25%;
+    text-align: center;
+    background-color: rgba(66, 57, 57, 0.3);
+    border-radius: 20px;
+}
+input.A{
+    margin-top: 20vh;
+    width: 30vh;
+    height: 4vh;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 5px;
+}
+input.B{
+    margin-top: 5vh;
+    width: 30vh;
+    height: 4vh;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 5px;
+}
+button{
+    margin-top: 15vh;
+    height: 10%;
+    width: 45%;
+    border: none;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* partie responsive */
+@media screen and (max-width:500px){
+    .p-1{
+        font-size: 0.9rem;
+    }
+    nav ul{
+        display: none;
+    }
+    .p-2{
+        margin-right: 8vh;
+        display: block;
+    }
+    .drown{
+        display: block;
+    }
+}
